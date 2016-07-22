@@ -26,7 +26,7 @@ html, body {
 */
 main {
   position: fixed;
-  top: 30px;
+  top: 0px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -43,6 +43,7 @@ main {
   .pane.editor {
     >div, .editor-wrapper {
       height: 100%;
+      display: none;
     }
   }
 
@@ -55,6 +56,11 @@ main {
     .file-drag {
       display: flex;
     }
+  }
+
+  .pane {
+    left: 0px !important;
+    width: 100% !important;
   }
 
   .file-drag {

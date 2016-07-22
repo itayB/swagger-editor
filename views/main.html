@@ -1,4 +1,3 @@
-<header ui-view="header"></header>
 <main
   ngf-drop ng-model="draggedFiles"
   ngf-drag-over-class="dragover"
@@ -6,7 +5,7 @@
   ngf-allow-dir="false"
   ngf-accept="'.json,.yaml,.yml'">
 
-  <div ui-layout="{ flow : 'column', dividerSize: '8px'}">
+  <div ui-layout="{ flow : 'column', dividerSize: '0px'}">
     <div class="editor pane" ui-layout-container>
       <div ui-view="editor"></div>
     </div>
